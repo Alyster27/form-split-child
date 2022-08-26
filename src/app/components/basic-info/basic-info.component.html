@@ -1,0 +1,53 @@
+<ng-container [formGroup]="form">
+    <div class="form-container">
+        <h2>Basic Info</h2>
+        <!-- First name -->
+        <div class="row">
+            <div class="col-25">
+                <label>First name</label>
+            </div>
+            <div class="col-75">
+                <input placeholder="Ex. Jane" formControlName="firstName" />
+            </div>
+        </div>
+        <!-- /First name-->
+
+        <!-- Last name -->
+        <div class="row">
+            <div class="col-25">
+                <label>Last name</label>
+            </div>
+            <div class="col-75">
+                <input placeholder="Ex. Doe" formControlName="lastName" />
+            </div>
+        </div>
+        <!-- /Last name-->
+
+        <!-- email -->
+        <div class="row">
+            <div class="col-25">
+                <label>e-mail</label>
+            </div>
+            <div class="col-75">
+                <input type="email" placeholder="Ex. jane@doe.com" formControlName="email" />
+            </div>
+        </div>
+        <!-- /email-->
+
+        <!-- age -->
+        <div class="row">
+            <div class="col-25">
+                <label>Age</label>
+            </div>
+            <div class="col-75">
+                <input type="number" placeholder="Ex. 27" formControlName="age" />
+            </div>
+        </div>
+        <!-- /age-->
+        <!-- Button Submit -->
+        <div class="row">
+            <input type="submit" value="Next">
+        </div>
+        <!-- /Button Submit -->
+    </div>
+</ng-container>

@@ -1,0 +1,54 @@
+<ng-container [formGroup]="form">
+    <div class="form-container">
+        <h2>Address Details</h2>
+
+        <!-- Street -->
+        <div class="row">
+            <div class="col-25">
+                <label>Street</label>
+            </div>
+            <div class="col-75">
+                <input placeholder="Ex. street name" formControlName="street">
+            </div>
+        </div>
+        <!-- /Street -->
+
+        <!-- Number -->
+        <div class="row">
+            <div class="col-25">
+                <label>Number</label>
+            </div>
+            <div class="col-75">
+                <input type="number" placeholder="Ex. 2" formControlName="number">
+            </div>
+        </div>
+        <!-- /Number -->
+
+        <!-- Postal -->
+        <div class="row">
+            <div class="col-25">
+                <label>Postal</label>
+            </div>
+            <div class="col-75">
+                <input placeholder="Ex. 1203" formControlName="postal">
+            </div>
+        </div>
+        <!-- /Postal -->
+
+        <!-- City -->
+        <div class="row">
+            <div class="col-25">
+                <label>City</label>
+            </div>
+            <div class="col-75">
+                <input placeholder="Ex. New York" formControlName="city">
+            </div>
+        </div>
+        <!-- /City -->
+        <!-- Button Submit -->
+        <div class="row">
+            <input type="submit" value="Send">
+        </div>
+        <!-- /Button Submit -->
+    </div>
+</ng-container>
